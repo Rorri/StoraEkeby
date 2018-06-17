@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Stora Ekeby</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">yeet</a>
+  <a href="#contact">the</a>
+  <a href="#about">baby</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <div class="arrow" id="arrowid"> <i class="fa fa-angle-left"></i>
+    </div>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    var ar = document.getElementById("arrowid");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        ar.classList.add("selected") 
+    } else {
+        x.className = "topnav";
+        ar.classList.remove("selected") 
+    }
+}
+</script> 
+
+</body>
+</html>
